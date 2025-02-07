@@ -21,7 +21,7 @@ const projects = [
     name: 'hBFT protocol testing',
     imageUrl: '',
     techStack: ['Java', 'Next.js'],
-    description: '',
+    description: 'Implemented hBFT protocol. Tested it with a new automated testing algorithm, called ByzzFuzz. This contributed to a new framework, ByzzBench. Code is closed-source for now, but will become open-source.',
     link: ''
   },
   {
