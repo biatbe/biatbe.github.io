@@ -11,7 +11,8 @@ const projects = [
   {
     id: 2,
     name: 'Price App',
-    imageUrl: '/N4C_Logo.png',
+    imageUrl: '',
+    // imageUrl: '/N4C_Logo.png',
     techStack: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind', 'NextAuth'],
     description: 'Deployed a Next.js application on Vercel which Network4Cars currently use. The application lets users manage car data for different countries and automatically update car prices (daily) based on third-party data.',
     link: ''
@@ -30,7 +31,7 @@ const projects = [
     imageUrl: '',
     techStack: ['Flask', 'Next.js'],
     description: 'Currently in works. Developing a web application for displaying clothing brand discounts. Instead of having to check every clothing brand\'s site for discounts, with this app you can see them at one place and compare them.',
-    link: ''
+    link: 'https://github.com/biatbe/Discount-aggregator'
   },
 ]
 
