@@ -22,13 +22,13 @@ const designs = [
       <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8 mt-4">
         {designs.map((design) => (
           <li key={design.title} className="relative">
-            <div className="group overflow-hidden rounded-lg bg-black focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-black">
+            <div className="group overflow-hidden rounded-lg dark:bg-black focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-black">
               <img
                 alt=""
                 src={design.source}
                 className="aspect-[7/10] object-cover group-hover:opacity-10 group-hover:cursor-pointer"
               />
-              <div className="absolute left-[50%] top-[40%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-[1]">Placeholder</div>
+              <div className="absolute left-[50%] top-[40%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-[1] dark:text-white">Placeholder</div>
             </div>
           </li>
         ))}

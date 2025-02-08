@@ -3,7 +3,7 @@ const projects = [
   {
     id: 1,
     name: 'GoMedFlow',
-    imageUrl: 'https://tailwindui.com/plus/img/logos/48x48/tuple.svg',
+    imageUrl: '',
     techStack: ['Next.js', 'SQLite', 'Prisma', 'Tailwind'],
     description: 'Web application for the RDGG hospital based on the concept of GoMedFlow, which will help hospital workers build care processes.',
     link: ''
@@ -43,9 +43,9 @@ export default function Projects() {
             <div 
                 key={project.id}
             >
-                <div className="group flex flex-col overflow-hidden rounded-xl border border-zinc-400 hover:cursor-pointer">
-                    <div className="flex items-center justify-between p-2 px-6 group-hover:border-b border-zinc-400/70 group-hover:bg-zinc-700/25 transition-all duration-700 ease-in-out">
-                        <div className="text-[12px] sm:text-sm/6 font-medium text-zinc-200 ">{project.name}</div>
+                <a className="group flex flex-col overflow-hidden rounded-xl border border-black dark:border-zinc-400 hover:cursor-pointer" href={project.link} target="_blank">
+                    <div className="flex items-center justify-between p-2 px-6 group-hover:border-b border-black dark:border-zinc-400/70 group-hover:bg-zinc-300/25 dark:group-hover:bg-zinc-700/25 transition-all duration-700 ease-in-out">
+                        <div className="text-[12px] sm:text-[15px] font-medium dark:font-normal dark:text-zinc-200">{project.name}</div>
                         {project.imageUrl ?
                             <img
                                 alt={project.name}
@@ -58,15 +58,15 @@ export default function Projects() {
                             />
                         }
                     </div>
-                    <div id={project.id.toString()} className="flex flex-col justify-between gap-x-4 max-h-0 px-3 transition-all duration-700 ease-in-out group-hover:bg-zinc-700/25 group-hover:max-h-80 group-hover:py-2 group-hover:cursor-pointer">
-                        <dt className="text-zinc-200">
+                    <div id={project.id.toString()} className="flex flex-col justify-between gap-x-4 max-h-0 px-3 transition-all duration-700 ease-in-out group-hover:bg-zinc-300/25 dark:group-hover:bg-zinc-700/25 group-hover:max-h-80 group-hover:py-2 group-hover:cursor-pointer">
+                        <dt className="text-black dark:text-zinc-200 font-medium dark:font-normal">
                             Tech stack: {project.techStack.join(", ")}
                         </dt>
-                        <dt className="text-gray-500 mt-2">
+                        <dt className="text-gray-500 dark:text-gray-500 mt-2 font-medium dark:font-normal">
                             {project.description}
                         </dt>
                     </div>
-                </div>
+                </a>
             </div >
             ))}
         </div> 

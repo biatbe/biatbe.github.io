@@ -16,17 +16,23 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
-body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(-45deg, #030303, #070007, #00000e, #0b0000, #000303);
+  background: linear-gradient(-45deg, #ffffff, #fff6fa, #f0f6ff, #fff2f2, #f8fff4);
   background-size: 400% 400%;
   animation: bg 12s ease infinite;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #030303, #070007, #00000e, #0b0000, #000303);
+    background-size: 400% 400%;
+    animation: bg 12s ease infinite;
+  }
+}
+
 @keyframes bg {
   0% {
     background-position: 0% 50%;
